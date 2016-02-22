@@ -1,25 +1,19 @@
 'use strict';
 
-var ncp = require('ncp').ncp;
 var rimraf = require('rimraf');
+var fs = require('fs-extra');
 var path = require('path');
 
 hexo.on('generateBefore', function () {
   var source = path.join(process.cwd(), 'pages');
   var destination = path.join(process.cwd(), 'public');
 
-  rimraf(destination, function (err) {
-    if (err) {
-      throw new Error(err);
-    }
-
-    ncp(source, destination, function (err) {
-      if (err) {
-        throw new Error(err);
-      }
-    });
-
+  try {
+    rimraf.sync(destination);
+    fs.copySync(source, destination);
     console.log('Pages generated');
-  });
+  } catch (err) {
+    throw new Error(err);
+  }
 
 });

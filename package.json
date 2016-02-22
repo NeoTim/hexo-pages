@@ -23,7 +23,7 @@
   "homepage": "https://github.com/forsigner/hexo-pages#readme",
   "devDependencies": {},
   "dependencies": {
-    "ncp": "^2.0.0",
+    "fs-extra": "^0.26.5",
     "rimraf": "^2.5.2"
   }
 }
