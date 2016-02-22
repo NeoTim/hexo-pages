@@ -1,0 +1,26 @@
+{
+  "name": "hexo-pages",
+  "version": "1.0.0",
+  "description": "Generate pages for Hexo",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forsigner/hexo-pages.git"
+  },
+  "keywords": [
+    "hexo",
+    "pages",
+    "hexp plugin"
+  ],
+  "author": "forsigner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/forsigner/hexo-pages/issues"
+  },
+  "homepage": "https://github.com/forsigner/hexo-pages#readme",
+  "devDependencies": {
+  }
+}
