@@ -1,6 +1,6 @@
 {
   "name": "hexo-pages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate pages for Hexo",
   "main": "index",
   "scripts": {
@@ -13,6 +13,7 @@
   "keywords": [
     "hexo",
     "pages",
+    "generator",
     "hexp plugin"
   ],
   "author": "forsigner",
